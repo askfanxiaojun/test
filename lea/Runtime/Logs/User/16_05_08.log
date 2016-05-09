@@ -1,0 +1,977 @@
+[ 2016-05-08T22:07:43+08:00 ] ::1 /index.php?s=/User/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-05-08T22:08:57+08:00 ] ::1 /index.php?s=/User/Login/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2016-05-08T22:09:03+08:00 ] ::1 /index.php?s=/User/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-05-08T22:09:33+08:00 ] ::1 /index.php?s=/User/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `bupt_user` WHERE `phone` = '13111111111' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `uin` FROM `bupt_user` WHERE `phone` = '13111111111' AND `pwd` = '96e79218965eb72c92a549dd5a330112' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-05-08T22:09:39+08:00 ] ::1 /index.php?s=/User/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+
+[ 2016-05-08T22:09:47+08:00 ] ::1 /index.php?s=/User/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bupt_user` WHERE `phone` = '13111111111' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uin` FROM `bupt_user` WHERE `phone` = '13111111111' AND `pwd` = '81dc9bdb52d04dc20036dbd8313ed055' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-08T22:10:08+08:00 ] ::1 /index.php?s=/User/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `bupt_user` WHERE `phone` = '13111111111' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uin` FROM `bupt_user` WHERE `phone` = '13111111111' AND `pwd` = '96e79218965eb72c92a549dd5a330112' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-08T22:10:12+08:00 ] ::1 /index.php?s=/User/Login/reg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2016-05-08T22:10:27+08:00 ] ::1 /index.php?s=/User/Login/sendsms.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bupt_user` WHERE `phone` = '13111111112' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-08T22:10:35+08:00 ] ::1 /index.php?s=/User/Login/reg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bupt_user` WHERE `phone` = '13111111112' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `bupt_user` (`phone`,`pwd`,`create_time`) VALUES ('13111111112','81dc9bdb52d04dc20036dbd8313ed055','1462716635') [ RunTime:0.0011s ]
+
+[ 2016-05-08T22:10:35+08:00 ] ::1 /index.php?s=/User/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant j - assumed 'j' /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: data /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: collect_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: with_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: interview /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0014s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: inmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 29 行.
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: outmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT `money` FROM `bupt_user` WHERE `uin` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 190 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 201 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 203 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 213 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 215 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 217 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 225 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 227 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 229 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php on line 229 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 231 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2016-05-08T22:10:45+08:00 ] ::1 /index.php?s=/User/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0020s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant j - assumed 'j' /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: data /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: collect_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: with_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0012s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: interview /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0011s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: inmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 29 行.
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: outmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0020s ]
+SQL: SELECT `money` FROM `bupt_user` WHERE `uin` = 4 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 190 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 201 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 203 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 213 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 215 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 217 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 225 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 227 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 229 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php on line 229 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 231 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-05-08T22:10:47+08:00 ] ::1 /index.php?s=/User/Item/item_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0044s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bupt_user` WHERE `uin` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-05-08T22:10:51+08:00 ] ::1 /User/Info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_region` [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 164 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 170 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 174 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 185 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 187 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 197 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 199 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 201 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 209 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 211 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 211 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 213 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php on line 213 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 215 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2016-05-08T22:11:01+08:00 ] ::1 /index.php?s=/User/Info/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0030s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: money /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 38 行.
+NOTIC: [8] Undefined index: points /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0012s ]
+SQL: UPDATE `bupt_user` SET `name`='Fan' WHERE `uin` = 4 [ RunTime:0.0009s ]
+
+[ 2016-05-08T22:11:07+08:00 ] ::1 /index.php?s=/User/Info/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0029s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: money /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 38 行.
+NOTIC: [8] Undefined index: points /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0021s ]
+SQL: UPDATE `bupt_user` SET `age`='12' WHERE `uin` = 4 [ RunTime:0.0012s ]
+
+[ 2016-05-08T22:11:09+08:00 ] ::1 /index.php?s=/User/Info/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0019s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: money /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 38 行.
+NOTIC: [8] Undefined index: points /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0016s ]
+SQL: UPDATE `bupt_user` SET `sex`='1' WHERE `uin` = 4 [ RunTime:0.0005s ]
+
+[ 2016-05-08T22:11:10+08:00 ] ::1 /index.php?s=/User/Region/index/pid/110000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0031s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bupt_region` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bupt_region` WHERE `pid` = 110000  [ RunTime:0.0007s ]
+
+[ 2016-05-08T22:11:12+08:00 ] ::1 /index.php?s=/User/Region/index/pid/110100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0043s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_region` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `bupt_region` WHERE `pid` = 110100  [ RunTime:0.0005s ]
+
+[ 2016-05-08T22:11:21+08:00 ] ::1 /index.php?s=/User/Info/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0080s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: money /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 38 行.
+NOTIC: [8] Undefined index: points /Users/fan/PhpstormProjects/lea/App/User/Controller/InfoController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0018s ]
+SQL: UPDATE `bupt_user` SET `province`='110000',`city`='110100',`area`='110102',`address`='北邮' WHERE `uin` = 4 [ RunTime:0.0007s ]
+
+[ 2016-05-08T22:11:26+08:00 ] ::1 /index.php?s=/User/Item/item_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0019s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_user` WHERE `uin` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 0 AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_tags` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_tags` WHERE `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 188 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant item_add - assumed 'item_add' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 209 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 221 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 223 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 225 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 233 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 235 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 237 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php on line 237 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 239 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 323 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 369 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 381 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 393 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 407 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-05-08T22:11:34+08:00 ] ::1 /index.php?s=/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0018s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant j - assumed 'j' /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: data /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: collect_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: with_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: interview /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0015s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: inmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 29 行.
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: outmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0018s ]
+SQL: SELECT `money` FROM `bupt_user` WHERE `uin` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 190 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 201 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 203 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 213 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 215 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 217 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 225 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 227 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 229 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php on line 229 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 231 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-05-08T22:11:42+08:00 ] ::1 /index.php?s=/User/Item/item_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0020s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_user` WHERE `uin` = 4 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 0 AND `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_tags` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_tags` WHERE `status` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 188 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant item_add - assumed 'item_add' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 209 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 221 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 223 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 225 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 233 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 235 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 237 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php on line 237 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 239 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 323 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 369 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 381 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 393 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 407 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-05-08T22:23:53+08:00 ] ::1 /index.php?s=/User/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant j - assumed 'j' /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: data /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: collect_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: with_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0012s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: interview /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0014s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: inmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 29 行.
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: outmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462636800 AND a.time < 1462723199  ) AND a.uin = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462636800 AND a.create_time < 1462723199  ) AND a.uin = '4' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0018s ]
+SQL: SELECT `money` FROM `bupt_user` WHERE `uin` = 4 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 190 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 201 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 203 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 213 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 215 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 217 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 225 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 227 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 229 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php on line 229 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 4 AND `status` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 231 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+

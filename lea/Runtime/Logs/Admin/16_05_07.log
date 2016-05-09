@@ -1,0 +1,1344 @@
+[ 2016-05-07T23:27:22+08:00 ] ::1 /index.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0048s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE `status` = 0 AND a.isdel = '0' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_user_pay` [ RunTime:0.0018s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `bupt_user_pay` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bupt_user_withdrawals` [ RunTime:0.0011s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `bupt_user_withdrawals` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bupt_user_withdrawals` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 22 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE a.status = '1' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant j - assumed 'j' /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 26 行.
+NOTIC: [8] Undefined index: data /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 34 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: collect_item /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: with_item /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: interview /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0009s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: inmoney /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 38 行.
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: outmoney /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: user /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/Index/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-05-07T23:29:07+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: map /Users/fan/PhpstormProjects/lea/App/Admin/Controller/UserController.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `bupt_user` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /Users/fan/PhpstormProjects/lea/App/Admin/Controller/UserController.class.php 第 40 行.
+SQL: SELECT * FROM `bupt_user` ORDER BY uin desc LIMIT 0,20   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.uin = '3' AND a.isdel = '0' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE a.uin = '3' AND a.status = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_questions as a WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/UserController.class.php on line 47 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 63 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.uin = '2' AND a.isdel = '0' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE a.uin = '2' AND a.status = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_questions as a WHERE a.uin = '2' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/UserController.class.php on line 47 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '2' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '2' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 63 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.uin = '1' AND a.isdel = '0' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE a.uin = '1' AND a.status = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_questions as a WHERE a.uin = '1' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/UserController.class.php on line 47 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '1' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/User/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: money /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/04bdec7889c9bcd81274fb8a8b6bd6b6.php 第 183 行.
+NOTIC: [8] Undefined index: points /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/04bdec7889c9bcd81274fb8a8b6bd6b6.php 第 188 行.
+NOTIC: [8] Undefined index: create_time /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/04bdec7889c9bcd81274fb8a8b6bd6b6.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2016-05-07T23:29:09+08:00 ] ::1 /index.php?s=/Admin/User/user_attest.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_user_attest` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/UserController.class.php 第 67 行.
+SQL: SHOW COLUMNS FROM `bupt_user_attest` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_attest as a LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/UserController.class.php 第 74 行.
+SQL: SELECT a.*,a.status as attest_status,b.name as user_name,`age`,`points`,`create_time`,`phone`,`sex`,`area`,`address` FROM bupt_user_attest as a LEFT JOIN bupt_user b ON a.uin = b.uin  ORDER BY time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/User/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/e3073fa1c95fbd9f5317e56f5b33ee79.php 第 175 行.
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/e3073fa1c95fbd9f5317e56f5b33ee79.php 第 177 行.
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/e3073fa1c95fbd9f5317e56f5b33ee79.php 第 179 行.
+SQL: SHOW COLUMNS FROM `bupt_region` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_region` WHERE `id` = 360702 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_region` WHERE `id` = 360700 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_region` WHERE `id` = 360000 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-05-07T23:29:10+08:00 ] ::1 /index.php?s=/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0013s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-05-07T23:29:11+08:00 ] ::1 /index.php?s=/Admin/Auth/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0015s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_group`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/Auth/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2016-05-07T23:29:13+08:00 ] ::1 /index.php?s=/Admin/Auth/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0011s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bupt_admin_auth_rule` WHERE `pid` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 0 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 24  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 57  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `pid` = 60  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/Auth/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-05-07T23:29:14+08:00 ] ::1 /index.php?s=/Admin/Auth/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: roleid /Users/fan/PhpstormProjects/lea/App/Admin/Controller/AuthController.class.php 第 34 行.
+NOTIC: [8] Undefined variable: map /Users/fan/PhpstormProjects/lea/App/Admin/Controller/AuthController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `bupt_admin_user` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: map /Users/fan/PhpstormProjects/lea/App/Admin/Controller/AuthController.class.php 第 45 行.
+SQL: SELECT * FROM `bupt_admin_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `bupt_admin_auth_group`  [ RunTime:0.0001s ]
+SQL: SELECT `uid`,`group_id` FROM `bupt_admin_auth_group_access`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/Auth/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-05-07T23:29:15+08:00 ] ::1 /index.php?s=/Admin/System/uploadset.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0013s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2016-05-07T23:29:17+08:00 ] ::1 /index.php?s=/Admin/System/payment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0024s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0018s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: business /Users/fan/PhpstormProjects/lea/App/Admin/Controller/SystemController.class.php 第 52 行.
+NOTIC: [8] Undefined index: business /Users/fan/PhpstormProjects/lea/App/Admin/Controller/SystemController.class.php 第 52 行.
+NOTIC: [8] Undefined index: partner /Users/fan/PhpstormProjects/lea/App/Admin/Controller/SystemController.class.php 第 51 行.
+NOTIC: [8] Undefined index: business /Users/fan/PhpstormProjects/lea/App/Admin/Controller/SystemController.class.php 第 52 行.
+NOTIC: [8] Undefined index: business /Users/fan/PhpstormProjects/lea/App/Admin/Controller/SystemController.class.php 第 52 行.
+NOTIC: [8] Undefined index: business /Users/fan/PhpstormProjects/lea/App/Admin/Controller/SystemController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2016-05-07T23:29:18+08:00 ] ::1 /index.php?s=/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0018s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_news a LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT a.*,b.name as cname FROM bupt_news a LEFT JOIN bupt_news_category b ON a.cid=b.id   WHERE a.ispage = 0 ORDER BY a.time desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/News/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-05-07T23:29:19+08:00 ] ::1 /index.php?s=/Admin/News/news_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0017s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0017s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_news_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_news_category` WHERE `pid` = 0 ORDER BY sort desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_news_category` WHERE `pid` = 1 ORDER BY sort desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/News/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: info /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/4762c15e7e87ebb037590af90b5d392d.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2016-05-07T23:29:20+08:00 ] ::1 /index.php?s=/Admin/Upload/index.html&action=config&&noCache=1462634960196
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2016-05-07T23:29:20+08:00 ] ::1 /index.php?s=/Admin/Upload/index.html&action=config&&noCache=1462634960196
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2016-05-07T23:29:21+08:00 ] ::1 /index.php?s=/Admin/News/category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_news_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_news_category` WHERE `pid` = 0 ORDER BY sort desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_news_category` WHERE `pid` = 1 ORDER BY sort desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/News/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: page /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/a11a3028f8386ac7401e1fe4abb51237.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-05-07T23:29:23+08:00 ] ::1 /index.php?s=/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_news a LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT a.*,b.name as cname FROM bupt_news a LEFT JOIN bupt_news_category b ON a.cid=b.id   WHERE a.ispage = 0 ORDER BY a.time desc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/News/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2016-05-07T23:29:26+08:00 ] ::1 /index.php?s=/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_news a LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT a.*,b.name as cname FROM bupt_news a LEFT JOIN bupt_news_category b ON a.cid=b.id   WHERE a.ispage = 0 ORDER BY a.time desc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/News/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2016-05-07T23:29:28+08:00 ] ::1 /index.php?s=/Admin/Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0013s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.isdel = '0' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php 第 33 行.
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.isdel = '0' ORDER BY a.time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0012s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0008s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '6' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 6 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '6' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '7' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 7 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 3 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '5' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 5 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_item_progress` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_item_progress`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 169 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2016-05-07T23:29:31+08:00 ] ::1 /index.php?s=/Admin/Item/item_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0011s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 0 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_tags` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_tags` WHERE `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 203 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 203 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 203 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 209 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 233 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 233 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 235 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 235 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 233 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 233 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 235 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 235 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 233 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 233 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 235 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 235 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 255 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 267 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 283 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 295 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/c0805634a0fec0dbf7b97f700d8dba95.php 第 309 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2016-05-07T23:29:34+08:00 ] ::1 /index.php?s=/Admin/Item/item_category.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0008s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 0 ORDER BY sort desc  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 3 ORDER BY sort desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 2 ORDER BY sort desc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 4 ORDER BY sort desc  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/Item/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: page /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/187026393afe811a71f5a4c3ca23a6c6.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2016-05-07T23:29:36+08:00 ] ::1 /index.php?s=/Admin/Item/recycle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0008s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.isdel = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.isdel = 1 ORDER BY a.time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2016-05-07T23:29:38+08:00 ] ::1 /index.php?s=/Admin/Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0012s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.isdel = '0' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php 第 33 行.
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.isdel = '0' ORDER BY a.time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0017s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0008s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '6' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '6' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '7' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 7 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 8 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '3' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 3 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '5' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 5 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/ItemController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_progress` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_item_progress`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 169 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/ad2ba2a44d2f31b684d4b3841eeee720.php 第 171 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2016-05-07T23:29:40+08:00 ] ::1 /index.php?s=/Admin/Funds/money_details.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0011s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0013s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 17 行.
+NOTIC: [8] Undefined index: uin /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_money_details as a LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: where /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 35 行.
+SQL: SELECT a.*,a.status as details_status,b.name as user_name,b.age,b.points,b.create_time,b.phone,b.sex,b.area,b.address FROM bupt_user_money_details as a LEFT JOIN bupt_user b ON a.uin = b.uin  ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/b8c6c3a078e6c0d63db3c43ad1d0b1dc.php 第 173 行.
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/b8c6c3a078e6c0d63db3c43ad1d0b1dc.php 第 175 行.
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/b8c6c3a078e6c0d63db3c43ad1d0b1dc.php 第 177 行.
+NOTIC: [8] Undefined offset: 9 /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-05-07T23:30:54+08:00 ] ::1 /index.php?s=/Admin/Funds/money_details/uin/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0010s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0008s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0031s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_money_details as a WHERE a.uin = '1' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/Admin/Controller/FundsController.class.php 第 33 行.
+SQL: SELECT a.*,a.status as details_status,b.name as user_name,b.age,b.points,b.create_time,b.phone,b.sex,b.area,b.address FROM bupt_user_money_details as a LEFT JOIN bupt_user b ON a.uin = b.uin  WHERE a.uin = '1' ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/b8c6c3a078e6c0d63db3c43ad1d0b1dc.php 第 173 行.
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/b8c6c3a078e6c0d63db3c43ad1d0b1dc.php 第 175 行.
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/Admin/b8c6c3a078e6c0d63db3c43ad1d0b1dc.php 第 177 行.
+NOTIC: [8] Undefined offset: 9 /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-05-07T23:30:56+08:00 ] ::1 /index.php?s=/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_admin_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0008s ]
+SQL: SELECT g.title FROM bupt_admin_auth_group_access a INNER JOIN bupt_admin_auth_group g ON a.group_id=g.id  WHERE a.uid = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT `group_id` FROM `bupt_admin_auth_group_access` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_group` [ RunTime:0.0009s ]
+SQL: SELECT `rules` FROM `bupt_admin_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_admin_auth_rule` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 0  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 13  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 11  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 14  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 24  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 50  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 57  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_admin_auth_rule` WHERE `id` IN ('1','13','22','11','3','4','5','6','7','8','9','10','12','52','53','54','55','64','65','14','15','16','17','18','19','20','21','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','56','63','57','58','60','61') AND `menu` = 1 AND `pid` = 60  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE `status` = 0 AND a.isdel = '0' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user_pay` [ RunTime:0.0013s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `bupt_user_pay` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_user_withdrawals` [ RunTime:0.0016s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `bupt_user_withdrawals` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bupt_user_withdrawals` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 22 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE a.status = '1' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant j - assumed 'j' /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 26 行.
+NOTIC: [8] Undefined index: data /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 34 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: collect_item /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: with_item /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 36 行.
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: interview /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0010s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: inmoney /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 38 行.
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: outmoney /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: user /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php 第 40 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/Admin/Controller/IndexController.class.php on line 37 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Template/Admin/default/Index/foot.html): failed to open stream: No such file or directory /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+

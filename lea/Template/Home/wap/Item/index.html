@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>项目列表 - <bupt:title /></title>
+    <meta name="keywords" content="<bupt:keywords />"/>
+    <meta name="description" content="<bupt:description />"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="__PUBLIC__/css/pintuer.css">
+    <link rel="stylesheet" href="__THEME__/default/css/bupt.css">
+    <script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+    <script src="__PUBLIC__/js/pintuer.js"></script>
+    <script src="__PUBLIC__/js/respond.js"></script>
+    <script src="__PUBLIC__/js/goTop.js"></script>
+    <script src="__PUBLIC__/js/TouchSlide.1.1.source.js"></script>
+    <script src="__PUBLIC__/lib/layer_m/layer.m.js"></script>
+</head>
+<body class="bg">
+    <div class="x12">
+        <!-- 引入头部文件 -->
+        <include file="Public/header" />
+        <!-- 类别 -->
+        <div class="x12 bg-white padding margin-top">
+            <span class="x2 text-right">类别：</span>
+            <span class="x10 text-small height-small">
+                <buptlist name="categorylist" id="bupt">
+                    <a href="{$bupt.url}" class="text-gray"><span class="padding-left">{$bupt.name}</span></a>
+                </buptlist>
+            </span>
+        </div>
+        <div class="x12  padding-small">
+        <!-- 项目循环开始 -->
+        <buptlist name="itemlist" id="bupt">
+            <div class="x12 bg-white padding margin-top">
+                <span class="x12 margin-small-bottom">
+                    <h4>{$bupt.name}</h4>
+                </span>
+                <a href="{$bupt.url}">
+                    <img src="{$bupt.cover_img}" alt="{$bupt.name}" class="img-responsive"/>
+                </a>
+                <span class="x12 margin-top">
+                    <div class="progress progress-small progress-striped active">
+                        <div class="progress-bar bg-sub" style="width:{$bupt.success_rate}%;"></div>
+                    </div>
+                </span>
+                <span class="x12 margin-top text-small padding-bottom height">
+                    <span class="x3">
+                        <span class="x6">完成:</span>
+                        <span class="x6 text-red">{$bupt.success_rate}%</span>
+                    </span>
+                    <span class="x6">
+                        <span class="x4">目标:</span>
+                        <span class="x8 text-red">{$bupt.raising_money}</span>
+                    </span>
+                    <span class="x3" style="margin-top:-6px">
+                        <a href="{$bupt.url}" class="button button-small bg-dot fadein-right">支持</a>
+                    </span>
+                </span>
+            </div>
+        </buptlist>
+            <!-- 项目循环结束 -->
+        </div>
+    <div class="x12 text-center padding"><ul class="pagination border-red pagination-small">{$page}</ul></div>
+    </div>
+    <!-- 引入底部文件 -->
+    <include file="Public/foot" />
+</body>
+</html>

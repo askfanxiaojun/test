@@ -1,0 +1,539 @@
+[ 2016-05-07T23:26:53+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 71 行.
+NOTIC: [8] Undefined index: order /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 166 行.
+NOTIC: [8] Undefined index: cid /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 167 行.
+NOTIC: [8] Undefined index: attr /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 170 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 178 行.
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `bupt_ad` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bupt_ad` WHERE ( type =1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0014s ]
+NOTIC: [2] Illegal string offset 'a.isdel' /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0010s ]
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE ( a.status =1 AND a.progress =1 AND a.end_time >1462634813 AND a.isdel = 0 ) ORDER BY sort desc LIMIT 10   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0009s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0012s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2016-05-07T23:26:59+08:00 ] ::1 /index.php?s=/Home/Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_item_category`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/Home/Controller/ItemController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.status = 1 AND a.isdel = '0' LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 46 行.
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.status = 1 AND a.isdel = '0' ORDER BY a.time desc LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0015s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0019s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '6' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2016-05-07T23:27:03+08:00 ] ::1 /index.php?s=/Home/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/Home/Controller/NewsController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_news a WHERE a.status = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT a.*,b.name as cname FROM bupt_news a LEFT JOIN bupt_news_category b ON a.cid=b.id   WHERE a.status = 1 ORDER BY a.time desc LIMIT 10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bupt_news_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_news_category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_news_category` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 51 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 116 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 120 行.
+NOTIC: [8] Undefined index: order /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 166 行.
+NOTIC: [8] Undefined index: cid /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 167 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 169 行.
+NOTIC: [8] Undefined index: attr /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 170 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 178 行.
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: id /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php 第 188 行.
+SQL: SELECT * FROM `bupt_news_category` WHERE `status` = 1 ORDER BY id desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: id /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php 第 190 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0011s ]
+NOTIC: [2] Illegal string offset 'a.isdel' /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0009s ]
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE ( a.status =1 AND a.end_time >1462634823 AND a.isdel = 0 ) ORDER BY sort desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0011s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0012s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0015s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php on line 250 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php on line 250 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php on line 250 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '6' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php on line 250 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '6' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php on line 250 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/ef81e6669fade0bdeb9c7914343a1625.php on line 250 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2016-05-07T23:27:04+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 71 行.
+NOTIC: [8] Undefined index: order /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 166 行.
+NOTIC: [8] Undefined index: cid /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 167 行.
+NOTIC: [8] Undefined index: attr /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 170 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 178 行.
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `bupt_ad` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_ad` WHERE ( type =1 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0012s ]
+NOTIC: [2] Illegal string offset 'a.isdel' /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0016s ]
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE ( a.status =1 AND a.progress =1 AND a.end_time >1462634824 AND a.isdel = 0 ) ORDER BY sort desc LIMIT 10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0012s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/Home/9caf0bb0a4ec33bc3ac62eb05fc12f83.php on line 192 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2016-05-07T23:27:08+08:00 ] ::1 /index.php?s=/Item/info/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0012s ]
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.id = '3' AND a.status = 1 AND a.isdel = '0' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0014s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0025s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0013s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Home/Controller/ItemController.class.php on line 63 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0010s ]
+SQL: SELECT * FROM bupt_item_questions as a WHERE `itemid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.name as item_name,c.name as user_name FROM bupt_item_with_order as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_user c ON a.uin = c.uin  WHERE a.itemid = '3' ORDER BY create_time desc LIMIT 10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bupt_item_log` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bupt_item_log` WHERE `itemid` = 3  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0010s ]
+SQL: SELECT a.*,b.name as item_name,b.cover_img,c.name as user_name,c.header,d.do_what FROM bupt_item_lead_user as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_user c ON a.uin = c.uin LEFT JOIN bupt_item_lead d ON a.itemid = d.itemid  WHERE a.itemid = '3' ORDER BY time desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_video` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_progress` [ RunTime:0.0009s ]
+SQL: SELECT b.*,a.id as pid,a.name as pname FROM bupt_item_progress as a RIGHT JOIN bupt_item_video b ON b.type=a.id and b.itemid=3  WHERE ( a.id > 0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 92 行.
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0015s ]
+SQL: SELECT a.*,b.name as cname FROM bupt_news a LEFT JOIN bupt_news_category b ON a.cid=b.id   WHERE ( a.status =1 AND a.cid In(5) ) ORDER BY a.time desc LIMIT 10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-05-07T23:27:58+08:00 ] ::1 /index.php?s=/Item/info/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0014s ]
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.id = '7' AND a.status = 1 AND a.isdel = '0' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0015s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0012s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0012s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Home/Controller/ItemController.class.php on line 63 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0009s ]
+SQL: SELECT * FROM bupt_item_questions as a WHERE `itemid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.name as item_name,c.name as user_name FROM bupt_item_with_order as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_user c ON a.uin = c.uin  WHERE a.itemid = '7' ORDER BY create_time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_log` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_item_log` WHERE `itemid` = 7  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0012s ]
+SQL: SELECT a.*,b.name as item_name,b.cover_img,c.name as user_name,c.header,d.do_what FROM bupt_item_lead_user as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_user c ON a.uin = c.uin LEFT JOIN bupt_item_lead d ON a.itemid = d.itemid  WHERE a.itemid = '7' ORDER BY time desc LIMIT 10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_video` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bupt_item_progress` [ RunTime:0.0013s ]
+SQL: SELECT b.*,a.id as pid,a.name as pname FROM bupt_item_progress as a RIGHT JOIN bupt_item_video b ON b.type=a.id and b.itemid=7  WHERE ( a.id > 0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 92 行.
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0010s ]
+SQL: SELECT a.*,b.name as cname FROM bupt_news a LEFT JOIN bupt_news_category b ON a.cid=b.id   WHERE ( a.status =1 AND a.cid In(5) ) ORDER BY a.time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-05-07T23:28:43+08:00 ] ::1 /index.php?s=/Item/info/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0016s ]
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.id = '3' AND a.status = 1 AND a.isdel = '0' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0031s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0017s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0017s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/Home/Controller/ItemController.class.php on line 63 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: name /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 57 行.
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_item_questions` [ RunTime:0.0010s ]
+SQL: SELECT * FROM bupt_item_questions as a WHERE `itemid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.name as item_name,c.name as user_name FROM bupt_item_with_order as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_user c ON a.uin = c.uin  WHERE a.itemid = '3' ORDER BY create_time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_item_log` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `bupt_item_log` WHERE `itemid` = 3  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0015s ]
+SQL: SELECT a.*,b.name as item_name,b.cover_img,c.name as user_name,c.header,d.do_what FROM bupt_item_lead_user as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_user c ON a.uin = c.uin LEFT JOIN bupt_item_lead d ON a.itemid = d.itemid  WHERE a.itemid = '3' ORDER BY time desc LIMIT 10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_video` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_item_progress` [ RunTime:0.0012s ]
+SQL: SELECT b.*,a.id as pid,a.name as pname FROM bupt_item_progress as a RIGHT JOIN bupt_item_video b ON b.type=a.id and b.itemid=3  WHERE ( a.id > 0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 92 行.
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_news` [ RunTime:0.0021s ]
+SQL: SELECT a.*,b.name as cname FROM bupt_news a LEFT JOIN bupt_news_category b ON a.cid=b.id   WHERE ( a.status =1 AND a.cid In(5) ) ORDER BY a.time desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+

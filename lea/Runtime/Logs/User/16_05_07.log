@@ -1,0 +1,1496 @@
+[ 2016-05-07T23:31:07+08:00 ] ::1 /index.php?s=/User/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0016s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant j - assumed 'j' /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 15 行.
+NOTIC: [8] Undefined index: data /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 25 行.
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: collect_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 26 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: with_item /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462032000 AND a.time < 1462118399  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: interview /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0011s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '3' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: inmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 29 行.
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462032000 AND a.create_time < 1462118399  ) AND a.uin = '3' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: outmoney /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php 第 30 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462118400 AND a.time < 1462204799  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '3' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462118400 AND a.create_time < 1462204799  ) AND a.uin = '3' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462204800 AND a.time < 1462291199  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '3' AND `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462204800 AND a.create_time < 1462291199  ) AND a.uin = '3' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462291200 AND a.time < 1462377599  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '3' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462291200 AND a.create_time < 1462377599  ) AND a.uin = '3' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462377600 AND a.time < 1462463999  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '3' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462377600 AND a.create_time < 1462463999  ) AND a.uin = '3' AND `type` = 2 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462464000 AND a.time < 1462550399  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '3' AND `type` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462464000 AND a.create_time < 1462550399  ) AND a.uin = '3' AND `type` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_with_order as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/IndexController.class.php on line 28 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE ( a.time > 1462550400 AND a.time < 1462636799  ) AND a.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '3' AND `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) AS tp_sum FROM bupt_user_money_details as a WHERE ( a.create_time > 1462550400 AND a.create_time < 1462636799  ) AND a.uin = '3' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0009s ]
+SQL: SELECT `money` FROM `bupt_user` WHERE `uin` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 180 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 190 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 201 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 203 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 213 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 215 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 217 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 225 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 227 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 229 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php on line 229 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/ba6fe9656d017f718cbb1cbe2bdb8d07.php 第 231 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2016-05-07T23:31:13+08:00 ] ::1 /index.php?s=/User/Item/item_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `bupt_user` WHERE `uin` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 0 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_tags` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_tags` WHERE `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 188 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant item_add - assumed 'item_add' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 209 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 221 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 223 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 225 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 233 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 235 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 237 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php on line 237 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 239 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 323 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 369 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 381 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 393 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 407 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002422s ]
+
+[ 2016-05-07T23:31:15+08:00 ] ::1 /index.php?s=/User/Item/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0014s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item as a LEFT JOIN bupt_item_video as b ON a.id = b.itemid  WHERE a.uin = '3' AND a.isdel = '0' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: a.isdel /Users/fan/PhpstormProjects/lea/App/User/Model/ItemModel.class.php 第 46 行.
+SQL: SELECT a.*,a.id as id,c.id as cid,c.name as progress_name,d.uin,d.name as user_name,d.header as user_header,e.id as eid,e.name as category_name FROM bupt_item as a LEFT JOIN bupt_item_progress as c ON a.progress = c.id LEFT JOIN bupt_user as d ON a.uin = d.uin LEFT JOIN bupt_item_category as e ON a.cid = e.id  WHERE a.uin = '3' AND a.isdel = '0' ORDER BY a.time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 32 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `bupt_item_interview` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bupt_item_lead_user` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0013s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_item` [ RunTime:0.0017s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '4' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 32 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '6' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 6 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '6' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '6' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 32 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '7' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 7 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '7' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 32 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '8' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '8' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 32 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '3' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 3 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '3' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemInterviewModel::countList(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 32 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: count /Users/fan/PhpstormProjects/lea/App/User/Model/ItemInterviewModel.class.php 第 55 行.
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_interview as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE `itemid` = '5' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_lead_user as a WHERE `status` = 1 AND `itemid` = 5 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php on line 66 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `raising_money` FROM `bupt_item` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] Missing argument 2 for User\Model\ItemWithOrderModel::countMoney(), called in /Users/fan/PhpstormProjects/lea/App/User/Controller/ItemController.class.php on line 35 and defined /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 51 行.
+NOTIC: [8] Undefined variable: uin /Users/fan/PhpstormProjects/lea/App/User/Model/ItemWithOrderModel.class.php 第 53 行.
+SQL: SELECT SUM(a.money) AS tp_sum FROM bupt_item_with_order as a WHERE a.itemid = '5' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `bupt_item_progress` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_item_progress`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 188 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 194 行.
+NOTIC: [8] Use of undefined constant item_add - assumed 'item_add' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 194 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 198 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 198 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 209 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 221 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 223 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 225 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 233 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 235 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 237 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php on line 237 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 239 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 291 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 293 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 293 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 293 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 293 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 293 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 293 行.
+NOTIC: [8] Undefined index: progress /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/16752e9c0f48d11474473fe60c835599.php 第 293 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2016-05-07T23:31:16+08:00 ] ::1 /index.php?s=/User/Investor/collect_item.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.name as item_name,b.cover_img,b.raising_money,b.investment_rate,b.lowest_money,c.name as progress_name,d.name as user_name FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_item_progress c ON b.progress = c.id LEFT JOIN bupt_user d ON a.uin = d.uin  WHERE a.uin = '3' ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 192 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 196 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 207 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 207 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 209 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 209 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 219 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 221 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 223 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 231 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 233 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 235 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php on line 235 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 237 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 289 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 289 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 291 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 291 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 293 行.
+NOTIC: [8] Use of undefined constant interview_item - assumed 'interview_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 293 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 295 行.
+NOTIC: [8] Use of undefined constant lead - assumed 'lead' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 295 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 297 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 297 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-05-07T23:31:22+08:00 ] ::1 /index.php?s=/User/Funds/money_details.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_user_money_details` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_money_details as a WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 31 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 31 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 31 行.
+SQL: SELECT a.*,a.status as details_status,b.name as user_name,b.age,b.points,b.create_time,b.phone,b.sex,b.area,b.address FROM bupt_user_money_details as a LEFT JOIN bupt_user b ON a.uin = b.uin  WHERE a.uin = '3' ORDER BY id desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 180 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 190 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 201 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 203 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 213 行.
+NOTIC: [8] Use of undefined constant money_details - assumed 'money_details' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 213 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 215 行.
+NOTIC: [8] Use of undefined constant payment_details - assumed 'payment_details' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 215 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 217 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 225 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 227 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 229 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php on line 229 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 231 行.
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 283 行.
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 285 行.
+NOTIC: [8] Undefined index: type /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/f1f548054d1e072356c1ccbe28537a1b.php 第 287 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-05-07T23:31:25+08:00 ] ::1 /index.php?s=/User/Funds/payment_details.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0016s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: out_trade_no /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 43 行.
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bupt_user_pay` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bupt_user_pay` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_pay as a WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 61 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 61 行.
+NOTIC: [8] Undefined variable: Page /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 61 行.
+NOTIC: [8] Trying to get property of non-object /Users/fan/PhpstormProjects/lea/App/User/Controller/FundsController.class.php 第 61 行.
+SQL: SELECT a.*,b.name as user_name FROM bupt_user_pay as a INNER JOIN bupt_user b ON a.uin=b.uin   WHERE a.uin = '3' ORDER BY id desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 180 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 190 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 201 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 203 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 213 行.
+NOTIC: [8] Use of undefined constant money_details - assumed 'money_details' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 213 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 215 行.
+NOTIC: [8] Use of undefined constant payment_details - assumed 'payment_details' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 215 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 217 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 225 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 227 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 229 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php on line 229 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 231 行.
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 283 行.
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 283 行.
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 285 行.
+NOTIC: [8] Undefined index: status /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/88f9253ddeec13de2eda514da7eb4b7a.php 第 287 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-05-07T23:31:27+08:00 ] ::1 /index.php?s=/User/Prepaid/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 178 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 184 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 188 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 199 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 201 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 213 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 215 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 215 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 223 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 225 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 227 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php on line 227 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a17e31915ace6e91108d18e06ed9aba8.php 第 229 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-05-07T23:31:30+08:00 ] ::1 /index.php?s=/User/Attest/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_user_attest` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `bupt_user_attest` [ RunTime:0.0013s ]
+SQL: SELECT a.*,a.status as attest_status,b.name as user_name,`age`,`points`,`create_time`,`phone`,`sex`,`area`,`address` FROM bupt_user_attest as a LEFT JOIN bupt_user b ON a.uin = b.uin  WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_user` WHERE `uin` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 178 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 184 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 188 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 199 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 201 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 213 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 215 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 223 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 225 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 227 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php on line 227 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 229 行.
+NOTIC: [8] Undefined variable: page /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/a862389baf4e403a1150e8911a9fc3c9.php 第 359 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-05-07T23:31:32+08:00 ] ::1 /index.php?s=/User/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_region` [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 164 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 170 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 174 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 185 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 187 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 197 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 199 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 201 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 209 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 211 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 211 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 213 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php on line 213 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/bb75c8fec3a5cb215e554476bb6455e8.php 第 215 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-05-07T23:31:34+08:00 ] ::1 /index.php?s=/User/Dolog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `bupt_user_do_log` WHERE `status` = 0 AND `uin` = 3  [ RunTime:0.0002s ]
+SQL: UPDATE `bupt_user_do_log` SET `status`='1' WHERE `id` IN ('17','18','19','20','21','22','23','24') [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT a.*,b.name as user_name FROM bupt_user_do_log as a LEFT JOIN bupt_user b ON a.uin = b.uin  WHERE a.uin = '3' ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 178 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 184 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 188 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 199 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 201 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 213 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 215 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 223 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 225 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 227 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php on line 227 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 229 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-05-07T23:31:38+08:00 ] ::1 /index.php?s=/User/Bank/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0019s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user_bank` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_user_bank` [ RunTime:0.0016s ]
+SQL: SELECT * FROM bupt_user_bank as a WHERE a.uin = '3' ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 178 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 184 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 188 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 199 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 201 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 213 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 215 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 223 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 225 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 227 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php on line 227 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 229 行.
+NOTIC: [8] Undefined variable: page /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 299 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-05-07T23:31:40+08:00 ] ::1 /User/Bank/bank_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0015s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2016-05-07T23:31:46+08:00 ] ::1 /User/Bank/bankInfo?card=s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0018s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-07T23:31:46+08:00 ] ::1 /User/Bank/bankInfo?card=s%27d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0036s ]
+
+[ 2016-05-07T23:31:46+08:00 ] ::1 /User/Bank/bankInfo?card=s%27d%3B
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0018s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:46+08:00 ] ::1 /User/Bank/bankInfo?card=s%27d%3B%27f
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0009s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:46+08:00 ] ::1 /User/Bank/bankInfo?card=s%27d%3B%27fj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:46+08:00 ] ::1 /User/Bank/bankInfo?card=sd%3Bfj
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0012s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:46+08:00 ] ::1 /User/Bank/bankInfo?card=sd%3Bf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0022s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:47+08:00 ] ::1 /User/Bank/bankInfo?card=sd%3B
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:47+08:00 ] ::1 /User/Bank/bankInfo?card=sd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0020s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:47+08:00 ] ::1 /User/Bank/bankInfo?card=s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0021s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:48+08:00 ] ::1 /User/Bank/bankInfo?card=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:48+08:00 ] ::1 /User/Bank/bankInfo?card=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0019s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:48+08:00 ] ::1 /User/Bank/bankInfo?card=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0023s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:48+08:00 ] ::1 /User/Bank/bankInfo?card=234
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0024s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:48+08:00 ] ::1 /User/Bank/bankInfo?card=2341
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0023s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=23419
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0012s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=234190
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=2341902
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0018s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=23419023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0024s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=234190238
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0013s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=2341902387
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=23419023874
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0021s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=234190238740
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0023s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=2341902387402
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=23419023874023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0012s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=234190238740237
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2016-05-07T23:31:49+08:00 ] ::1 /User/Bank/bankInfo?card=2341902387402374
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0026s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-05-07T23:31:57+08:00 ] ::1 /User/Bank/bank_in
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0010s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user_bank` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Model.class.php 第 1185 行.
+SQL: SELECT * FROM `bupt_user_bank` WHERE `card` = '2341902387402374' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: auto /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `bupt_user_bank` (`name`,`card`,`type`,`bank`,`uin`) VALUES ('懒扥','2341902387402374','sljfosd','sd;lfjsd','3') [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /Users/fan/PhpstormProjects/lea/Inc/Library/Think/Model.class.php 第 1128 行.
+SQL: INSERT INTO `bupt_user_do_log` (`content`,`uin`,`time`,`ip`) VALUES ('您的银行卡创建成功！','3','1462635117','0.0.0.0') [ RunTime:0.0008s ]
+
+[ 2016-05-07T23:31:57+08:00 ] ::1 /index.php?s=/User/Bank/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_user_bank` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_bank` [ RunTime:0.0008s ]
+SQL: SELECT * FROM bupt_user_bank as a WHERE a.uin = '3' ORDER BY id desc LIMIT 10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 178 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 184 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 188 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 199 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 201 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 213 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 215 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 223 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 225 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 227 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php on line 227 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 229 行.
+NOTIC: [8] Undefined variable: page /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/7935980d1f873bb3ebda8ab7645652b1.php 第 299 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2016-05-07T23:32:06+08:00 ] ::1 /index.php?s=/User/Dolog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0023s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `bupt_user_do_log` WHERE `status` = 0 AND `uin` = 3  [ RunTime:0.0002s ]
+SQL: UPDATE `bupt_user_do_log` SET `status`='1' WHERE `id` IN ('25') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT a.*,b.name as user_name FROM bupt_user_do_log as a LEFT JOIN bupt_user b ON a.uin = b.uin  WHERE a.uin = '3' ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 178 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 184 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 188 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 199 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 201 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 213 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 215 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 223 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 225 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 227 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php on line 227 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/2f4efe7e8c2a8eec3c4c406b1cd837f1.php 第 229 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0005s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-05-07T23:32:09+08:00 ] ::1 /index.php?s=/User/Investor/with_item.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bupt_item_with_order` WHERE `uin` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_item_with_order` WHERE `uin` = 3 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 192 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 196 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 207 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 207 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 209 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 209 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 219 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 221 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 223 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 231 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 233 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 235 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php on line 235 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 237 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 289 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 289 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 291 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 291 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 293 行.
+NOTIC: [8] Use of undefined constant interview_item - assumed 'interview_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 293 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 295 行.
+NOTIC: [8] Use of undefined constant lead - assumed 'lead' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 295 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 297 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 297 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-05-07T23:32:09+08:00 ] ::1 /index.php?s=/User/Investor/collect_item.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0019s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_item_collect` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id  WHERE a.uin = '3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT a.*,b.name as item_name,b.cover_img,b.raising_money,b.investment_rate,b.lowest_money,c.name as progress_name,d.name as user_name FROM bupt_item_collect as a LEFT JOIN bupt_item b ON a.itemid = b.id LEFT JOIN bupt_item_progress c ON b.progress = c.id LEFT JOIN bupt_user d ON a.uin = d.uin  WHERE a.uin = '3' ORDER BY time desc LIMIT 0,10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 192 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 196 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 207 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 207 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 209 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 209 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 219 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 221 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 223 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 231 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 233 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 235 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php on line 235 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 237 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 289 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 289 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 291 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 291 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 293 行.
+NOTIC: [8] Use of undefined constant interview_item - assumed 'interview_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 293 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 295 行.
+NOTIC: [8] Use of undefined constant lead - assumed 'lead' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 295 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 297 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/c038151e12a850e84aa5004c63604846.php 第 297 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-05-07T23:32:20+08:00 ] ::1 /index.php?s=/User/Investor/with_item.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0019s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bupt_item_with_order` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bupt_item_with_order` WHERE `uin` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_item_with_order` WHERE `uin` = 3 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 186 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 192 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 196 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 207 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 207 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 209 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 209 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 219 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 221 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 223 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 231 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 233 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 235 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php on line 235 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 237 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 289 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 289 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 291 行.
+NOTIC: [8] Use of undefined constant collect_item - assumed 'collect_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 291 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 293 行.
+NOTIC: [8] Use of undefined constant interview_item - assumed 'interview_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 293 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 295 行.
+NOTIC: [8] Use of undefined constant lead - assumed 'lead' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 295 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 297 行.
+NOTIC: [8] Use of undefined constant with_item - assumed 'with_item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/b13a6d17de264b901902ac403875e791.php 第 297 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2016-05-07T23:32:21+08:00 ] ::1 /index.php?s=/User/Item/item_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0026s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT r.status as rstatus,u.uin,u.name,u.phone,u.create_time,u.money,u.points,u.age,u.sex,u.province,u.city,u.area,u.address,u.header,c.name as cityname,p.name as provname,a.name as areaname FROM bupt_user u LEFT JOIN bupt_region p ON  p.id=u.province LEFT JOIN bupt_region c ON  c.id=u.city LEFT JOIN bupt_region a ON  a.id=u.area LEFT JOIN bupt_user_attest r ON r.uin=u.uin  WHERE u.uin = '3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bupt_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `bupt_user` WHERE `uin` = 3 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bupt_item_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `bupt_item_category` WHERE `pid` = 0 AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bupt_tags` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `bupt_tags` WHERE `status` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: num /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 133 行.
+NOTIC: [8] Undefined variable: w /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 140 行.
+NOTIC: [8] Undefined variable: limit /Users/fan/PhpstormProjects/lea/App/TagLib/bupt.class.php 第 153 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Use of undefined constant Index - assumed 'Index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 188 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant item_add - assumed 'item_add' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 194 行.
+NOTIC: [8] Use of undefined constant Item - assumed 'Item' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 198 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 209 行.
+NOTIC: [8] Use of undefined constant Investor - assumed 'Investor' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 211 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 221 行.
+NOTIC: [8] Use of undefined constant Funds - assumed 'Funds' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 223 行.
+NOTIC: [8] Use of undefined constant Prepaid - assumed 'Prepaid' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 225 行.
+NOTIC: [8] Use of undefined constant Attest - assumed 'Attest' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 233 行.
+NOTIC: [8] Use of undefined constant Info - assumed 'Info' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 235 行.
+NOTIC: [8] Use of undefined constant Dolog - assumed 'Dolog' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 237 行.
+NOTIC: [2] Missing argument 1 for doLog(), called in /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php on line 237 and defined /Users/fan/PhpstormProjects/lea/App/Common/Common/function.php 第 162 行.
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `bupt_user_do_log` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM bupt_user_do_log as a WHERE `uin` = 3 AND `status` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant Bank - assumed 'Bank' /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 239 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 317 行.
+NOTIC: [8] Undefined variable: nowcate /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 323 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 347 行.
+NOTIC: [8] Undefined variable: tagsid /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 349 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 369 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 381 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 393 行.
+NOTIC: [8] Undefined variable: item /Users/fan/PhpstormProjects/lea/Runtime/Cache/User/941d52b04aba60f63a1370ba38b10b99.php 第 407 行.
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `bupt_nav` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bupt_nav` WHERE ( status =1 AND type =2 AND pid =0 ) ORDER BY time desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 1 ORDER BY time desc LIMIT 10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 3 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 5 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 7 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 8 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `bupt_nav` WHERE `pid` = 9 ORDER BY time desc LIMIT 10   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+

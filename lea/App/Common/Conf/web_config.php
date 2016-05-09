@@ -1,0 +1,1 @@
+<?php	return array ( 'sitename' => 'BUPT众筹', 'domain' => 'http://www.buptcms.com', 'logo' => '/uploads/3/20160508/buptcms_1462715118513.png', 'title' => 'BUPT众筹', 'keywords' => 'BUPT众筹管理后台', 'desc' => 'BUPT众筹管理后台', 'huancun' => '3600', 'upload_exts' => '', 'rootPath' => '', 'URL_MODEL' => '3', );?>
